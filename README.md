@@ -46,3 +46,8 @@ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/
 helm install cert-manager jetstack/cert-manager \
   --namespace ingress-basic \
   --version v1.14.2
+
+# kubectl apply 
+
+kubectl apply -f aks-helloworld-one.yaml --namespace <NAMESPACE_NAME>
+kubectl apply -f aks-helloworld-two.yaml --namespace <NAMESPACE_NAME>
