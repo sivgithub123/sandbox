@@ -27,7 +27,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx \
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 
-!helm install my-release oci://registry-1.docker.io/bitnamicharts/external-dns
+~~ helm install my-release oci://registry-1.docker.io/bitnamicharts/external-dns ~~
 
 ## Use Helm to deploy an External DNS
 helm install external-dns bitnami/external-dns --namespace <NAMESPACE_NAME> --set provider=azure --set txtOwnerId=<CLUSTER_NAME> --set policy=sync --set azure.resourceGroup=<GROUP_NAME> --set azure.tenantId=$tenantid --set azure.subscriptionId=$subscriptionid --set azure.useManagedIdentityExtension=true --set azure.userAssignedIdentityID=$UserClientId
