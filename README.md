@@ -53,6 +53,7 @@ helm install cert-manager jetstack/cert-manager \
 # kubectl apply 
 
 kubectl apply -f aks-helloworld-one.yaml --namespace <NAMESPACE_NAME>
+
 kubectl apply -f aks-helloworld-two.yaml --namespace <NAMESPACE_NAME>
 
-kubectl apply -f hello-world-ingress.yaml --namespace <NAMESPACE_NAME>
+kubectl apply -f ingress.yaml --namespace <NAMESPACE_NAME>
