@@ -49,7 +49,9 @@ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/
 helm install cert-manager jetstack/cert-manager \
   --namespace ingress-basic \
   --version v1.14.2
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.13.2/cert-manager.yaml
+
 kubectl get pods -n cert-manager
 
 # kubectl apply 
